@@ -8,9 +8,10 @@
       
       
         .img {
-            width: 57px;
-            border-radius: 360px;
-            height: 60px;
+            width:100px;
+            border-radius:150px;
+            height: 70px;
+            top:0;
         }
         .logo-text {
             font-size: 50px;
@@ -25,8 +26,9 @@
         .header {
             display: flex;
             z-index: 100;
-            gap: 50px;
+            gap:130px;
             position: fixed;
+            
            background-color: #000080; /* Navy blue */
            color: #000033; /* Very dark blue for text */
             width: 100%;
@@ -34,28 +36,33 @@
             left: 0;
             right: 0;
             height: 80px;
-            margin-left: 4px;
+            margin-left: 0px;
             align-items: center; /* Better vertical alignment */
+           
+           background-color: #0a1930;
+
+
            
         }
         .msu {
             text-decoration: none;
-            border-radius: 5px;
+            border:1px solid brown;
             padding: 12px;
+            border-radius:50px;
             color: white;
-            background-color: darkblue;
+            background-color:#0a1930;
             margin-top: 18px;
             display: block;
             width: 90px;
             text-align: center;
-            box-shadow: 5px 2px 9px 7px blue;
+            
         }
         .proim {
             width: 350px;
             border-radius: 20px;
             display: block; /* Ensures proper spacing */
             margin: 0 auto; /* Centers the images */
-            box-shadow: 10px 4px 18px 14px blue;
+            box-shadow: 10px 4px 18px 14px brown;
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 0.5s ease, transform 0.5s ease;
@@ -87,35 +94,35 @@
         .lg1{
             text-decoration:none;
             color: white;
-            border-radius:6px;
+            border:1px solid brown;
             padding:15px;
-            background-color: darkblue;
-            margin-left:80px;
-            border:none;
-            box-shadow: 5px 2px 9px 7px blue;
+            background-color: #0a1930;
+            margin-left:50px;
+            border-radius:10px;
+            
         }
         .lg {
             text-decoration:none;
             color: white;
-            border-radius:6px;
+            border:1px solid brown;
             padding:15px;
-            background-color: darkblue;
-            border:none;
-            box-shadow: 5px 2px 9px 7px blue;
+            background-color: #0a1930;
+            border-radius:10px;
+            
         }
         .Gts {
             text-decoration: none;
-            border-radius: 7px;
+            border:1px solid brown;
             width: 90%;
             max-width: 300px;
             padding: 15px;
-            background-color: darkblue;
+            background-color: #0a1930;
             display: block;
             text-align: center;
             color: white;
             margin: 30px auto;
             font-size: 18px;
-            box-shadow: 5px 2px 9px 7px blue; 
+            border-radius:10px;
         }
         
         /* Responsive adjustments */
@@ -135,15 +142,16 @@
             }
         }
         body{
-            background-color: #000080;
+            background-color: #0a1930;
         }
     </style>
 </head>
 <body>
     <section class="header">
         <div class="mis">
-            <img src="Animologo.jpg" alt="Miamor Logo" class="img">
+            <img src="logo.png" alt="Miamor Logo" class="img">
             <span class="logo-text"></span>
+            
         </div>
         <div class="miz">
             <a href="" class="msu">signup</a>
@@ -152,6 +160,7 @@
     
     <section class="sec1">
         <img src="third.jpg" alt="Miamor showcase" class="proim">
+        <br>
         <h1>ANIMO WEB</h1>
         <p>Earn rewards for verified movement and fitness activity</p>
         
