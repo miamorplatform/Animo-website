@@ -639,7 +639,7 @@
             button.addEventListener('click', function() {
                 const accountNumber = this.parentElement.querySelector('.planp1').textContent;
                 navigator.clipboard.writeText(accountNumber).then(() => {
-                    //logic
+                    button.style.border='1px solid blue';
                 });
             });
         });
@@ -662,6 +662,7 @@
 </script>
 
 </html>
+
 
 
 
