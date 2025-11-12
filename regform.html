@@ -195,6 +195,21 @@
          margin-right:900px;
          display:none;
      }
+      .mes{
+        width: 300px;
+        color:white;
+        
+
+     }
+     .mess{
+        border:1px solid brown;
+        padding:10px;
+        width:290px;
+        border-radius: 10px;
+       
+        display: none;
+     }
+        
     </style>
 </head>
 <body>
@@ -511,6 +526,13 @@
             </div>
             <br>
             <input type="text" id="key" class="input" placeholder="Activation Key">
+           <br>
+            <br>
+            <div class="mess"id='mess'>
+                <p class="mes">
+                    Dear customer, click on the Animo registration package above to purchase activation code.
+                </p>
+            </div> 
             <br>
             <br>
             <button type="submit" class="mybtn">REGISTER</button>
@@ -651,17 +673,23 @@
                 hideAllPaymentDetails();
             });
         });
-        
+        const redi=document.querySelectorAll('.redi');
+        redi.forEach(btn=>{
+          btn.addEventListener('click',()=>{
+            window.location.href='https://wa.me/09069945469';
+          });
+        }); 
         // Form submission
-        form.addEventListener('submit', function(event) {
+       form.addEventListener('submit', function(event) {
             event.preventDefault();
-            // Add form validation and submission logic here
-            
+            let mess=document.getElementById('mess');
+            mess.style.display='block';
         });
     });
 </script>
 
 </html>
+
 
 
 
